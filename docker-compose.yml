@@ -1,0 +1,10 @@
+version: "3"
+services:
+  linux:
+    container_name: "ubuntu-linux"
+    image: "ubuntu"
+    restart: "always"
+    ports:
+      - "3000:80"
+    volumes:
+      - ./MediaDocker:/usr/src
